@@ -1,0 +1,43 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.m-feature{
+  text-align: center;
+  &-title{
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+  }
+  &-description{
+    margin: 0;
+    @include mq(1024px){
+      font-size: $font-normal;
+    }
+  }
+  &-icon{
+    width: max-content;
+    padding: .75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 0 auto;
+    &.green{
+      background: $background-icon-green;
+      color: $icon-color-green;
+    }
+    &.red{
+      background: $background-icon-red;
+      color: $icon-color-red;
+    }
+    &.blue{
+      background: $background-icon-blue;
+      color: $icon-color-blue;
+    }
+    @include mq(1024px){
+      .a-icon{
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}

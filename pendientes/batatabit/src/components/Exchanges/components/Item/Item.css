@@ -1,0 +1,39 @@
+.item{
+  list-style: none;
+  width: max-content;  
+}
+
+.item-name{
+  width: 100px;
+  display: inline-block;
+  padding: 12px 10px;
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: #B5B0AC;
+  text-align: left;
+  border-right: 2px solid var(--off-white);
+}
+.item-number{
+  width: 88px;
+  display: inline-block;
+  padding: 12px 10px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #757575;
+}
+
+.item:not(:last-child){
+  border-bottom: 2px solid var(--off-white);
+}
+
+.item-icon{
+  width: 11px;
+  margin-left: 10px;
+}

@@ -1,0 +1,25 @@
+@use "../settings/variables";
+
+h1,h2,h3,h4{
+  font-family: variables.$font-family-headings;
+  font-weight: 700;
+  line-height: 140%;
+  color:variables.$title-color;
+  margin: 0;
+}
+
+h1{
+  font-size: variables.$font-title-lg;
+}
+
+h2{
+  font-size: variables.$font-title-md;
+}
+
+h3{
+  font-size: variables.$font-title-sm;
+}
+
+h4{
+  font-size: variables.$font-title-xs;
+}

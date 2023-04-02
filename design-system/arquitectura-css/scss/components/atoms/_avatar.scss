@@ -1,0 +1,14 @@
+.a-avatar{
+  $size:2rem;
+  width:  $size;
+  height: $size;
+  border-radius: 50%;
+  cursor: pointer;
+  flex: none;
+}
+
+.a-avatar > img{
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

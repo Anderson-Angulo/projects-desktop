@@ -1,0 +1,21 @@
+@use "../../settings/variables";
+.m-form-search{
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.m-form-search > input{
+  flex-grow: 1;
+  padding: 0.5rem;
+  border:1px solid variables.$border-color;
+  border-radius: variables.$border-radius 0 0 variables.$border-radius;
+}
+
+.m-form-search .submit{
+  padding:0 1.5rem;
+  border: 1px solid variables.$border-color;
+  font-size: 1.25rem;
+  color:variables.$text-color-alt;
+  border-radius: 0 variables.$border-radius variables.$border-radius 0;
+  cursor: pointer;
+}

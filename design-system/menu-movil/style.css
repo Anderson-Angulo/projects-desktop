@@ -1,0 +1,19 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-nav: #1A252D;
+  --bg: #FBFBFE;
+  --blue: #59B3F3;
+  --grey: #A0A7AC;
+  --white: #FFFFFF;
+  --header-height: 4rem;
+}
+
+body {
+  background: var(--bg);
+}

@@ -1,0 +1,15 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+body{
+  font-family: variables.$font-family-body;
+  line-height: 180%;
+  font-size: variables.$font-normal;
+  font-weight: 400;
+  color: variables.$text-color;
+  background-color: variables.$background-lighter-color;
+  margin-top: variables.$header-height;
+  margin-bottom: variables.$header-height;
+  @include mixins.mq(1024px){
+    margin-bottom: 0;
+  }
+}

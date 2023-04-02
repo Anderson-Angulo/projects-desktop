@@ -1,0 +1,25 @@
+.movieBackground {
+  position: relative;
+  height: 448px;
+}
+.movieBackground > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  mix-blend-mode: soft-light;
+}
+
+@media screen and (max-width:320px) and (max-height:960px) {
+  .movieBackground {
+      position: relative;
+      height: 280px;
+    }
+}
+
+@media screen and (min-width:960px) and (max-height:1300px){
+  .movieBackground{
+    height: 100vh;
+  }
+}

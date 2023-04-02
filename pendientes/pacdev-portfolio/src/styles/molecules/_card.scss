@@ -1,0 +1,32 @@
+@import "../settings/variables";
+
+
+.m-card{
+  border-radius: .5rem;
+  padding: 1rem;
+  background-color: $background-light-color;
+  box-shadow: $shadow-md;
+  border:1.5px solid $border-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  &__image{
+    border-radius: .5rem; 
+    img{
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: .5rem;
+    }
+  }
+  &__description{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+  &__buttons{
+    display: flex;
+    gap: 1rem;
+  }
+}

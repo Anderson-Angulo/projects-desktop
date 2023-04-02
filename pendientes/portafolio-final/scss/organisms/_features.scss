@@ -1,0 +1,40 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.g-features{
+  background-color: transparent;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem 0;
+  }
+  &__title{
+    text-align: center;
+    font-size: $font-title-ss;
+  }
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    .m-feature{
+      max-width: 350px;
+    }
+  }
+  
+  @include mq(320px) {
+    &__title {
+      font-size: $font-title-sm;
+    }
+  }
+
+  @include mq(1024px){
+    &__title{
+      font-size: $font-title-md;
+    }
+    &__grid{
+      gap: 4rem;
+    }
+  }
+}

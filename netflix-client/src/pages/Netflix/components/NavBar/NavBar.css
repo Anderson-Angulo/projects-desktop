@@ -1,0 +1,77 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
+  z-index: 13;
+}
+
+.nav__menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #333;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  display: none !important;
+}
+.nav__menu a {
+  color: white;
+}
+
+.navbar__buttons {
+  gap: 1rem;
+}
+
+.nav__logo {
+  width: 6.75rem;
+}
+.nav__open {
+  width: 1.4rem;
+  cursor: pointer;
+}
+
+.nav__search-icon {
+  width: 1.4rem;
+  cursor: pointer;
+}
+
+.nav__logout {
+  width: 1.5rem;
+  display: none;
+  color: var(--color-primary);
+  cursor: pointer;
+}
+.nav__search input {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    gap: 1.5rem;
+  }
+  .nav__logo {
+    width: 14rem;
+  }
+  .nav__menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    padding: 0;
+    background: transparent;
+  }
+  .nav__open {
+    display: none;
+  }
+  .nav__search-icon {
+    width: 1.625rem;
+    cursor: pointer;
+  }
+  .nav__logout {
+    width: 1.75rem;
+    display: block;
+  }
+}

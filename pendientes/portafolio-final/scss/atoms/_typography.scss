@@ -1,0 +1,29 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.a-banner-title{
+  color: $primary-color;
+}
+.a-banner-subtitle{
+  color: $primary-color-dark;
+  font-weight: 700;
+}
+
+.a-banner-strong{
+  color: $banner-strong-color;
+}
+
+.a-title-lg{
+  font-size: $font-title-lg;
+}
+.a-title-md{
+  font-size: $font-title-md
+}
+.a-title-sm{
+  font-size: $font-title-sm
+}
+.a-title-xs{
+  font-size: $font-title-xs
+}
+
+@include sizings(map-keys($font-sizings)...);

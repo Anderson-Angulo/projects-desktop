@@ -1,0 +1,71 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-reviews{
+  padding: 6.25rem 0;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  1.5rem 0;
+  }
+  &__image{
+    width: 220px;
+  }
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem 0;
+    text-align: center;
+    max-width: 532px;
+  }
+
+  &__emitter{
+    color: variables.$title-color;
+  }
+  &__navigation{
+    position: relative;
+    display: flex;
+    
+    span{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+    }
+  }
+  &__buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include mixins.mq(1024px){
+    padding: 9.375rem 0;
+    &__container{
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 0 5rem;
+    }
+
+    &__content{
+      text-align: left;
+    }
+
+    &__text {
+      font-size: variables.$font-bigger;
+    }
+
+    &__navigation{
+      justify-content: flex-end;
+      span{
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+    &__buttons{
+      width: max-content;
+      gap: 0 2.5rem;
+    }
+  }
+}

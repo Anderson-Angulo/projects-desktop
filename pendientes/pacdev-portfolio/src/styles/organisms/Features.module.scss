@@ -1,0 +1,41 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-features{
+  background-color: transparent;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem 0;
+  }
+  &__title{
+    text-align: center;
+    font-size: variables.$font-title-ss;
+  }
+  &__grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  &__feature{
+    max-width: 350px;
+  }
+  
+  @include mixins.mq(320px) {
+    &__title {
+      font-size: variables.$font-title-sm;
+    }
+  }
+
+  @include mixins.mq(1024px){
+    &__title{
+      font-size: variables.$font-title-md;
+    }
+    &__grid{
+      gap: 4rem;
+    }
+  }
+}

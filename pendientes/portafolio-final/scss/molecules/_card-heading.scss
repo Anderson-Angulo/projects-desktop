@@ -1,0 +1,13 @@
+@import "../settings/variables";
+
+.m-heading{
+  display: flex;
+  gap: .75rem;
+  align-items: center;
+  max-height: max-content;
+  &__tecnologies{
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+  }
+}

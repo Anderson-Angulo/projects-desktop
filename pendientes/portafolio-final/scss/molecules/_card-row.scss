@@ -1,0 +1,35 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.m-card-row{
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  &__buttons{
+    display: flex;
+    gap: 1.125rem;
+    margin-top: 1.5rem;
+  }
+  &__description{
+    margin-top: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &__image{
+    border-radius: 1rem;
+    img{
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      border-radius: 1rem;
+      box-shadow: $shadow-md;
+    }
+  }
+  @include mq(320px){
+    &__buttons {
+      gap: 1.5rem;
+    }
+  }
+}

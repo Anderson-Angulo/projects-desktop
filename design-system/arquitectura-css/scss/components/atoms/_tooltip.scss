@@ -1,0 +1,27 @@
+@use "../../settings//variables";
+
+[data-tooltip] {
+  position: relative;
+
+  &::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    top: 3.5rem;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    color: variables.$text-color-white;
+    background: variables.$text-color-alt;
+    font-family: variables.$body-font;
+    font-size: variables.$smaller-fs;
+    border-radius: variables.$border-radius;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity variables.$trans-2;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+}

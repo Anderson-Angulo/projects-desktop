@@ -1,0 +1,44 @@
+@import "../settings/variables";
+
+
+.m-input{
+  position: relative;
+  &__field{
+    border-radius: .5rem;
+    padding: .75rem 1rem;
+    border:1px solid $border-color;
+    background: $background-light-color;
+    box-shadow: $shadow;
+    outline: none;
+    color:$text-color;
+    width: 100%;
+    line-height: normal;
+    &:focus{
+      border-color: $primary-color-dark;
+    }
+  }
+  &__label{
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease;
+    pointer-events: none;
+  }
+  &__field:focus + &__label,
+  &__field:not(:placeholder-shown) + &__label{
+    top:0;
+    transform:translateY(-50%) scale(.85);
+    transform-origin: top left;
+    background-color: $background-light-color;
+    padding: 0 .25rem;
+    color: $primary-color-dark;
+    border-radius: .25rem;
+  }
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

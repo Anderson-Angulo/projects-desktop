@@ -1,0 +1,14 @@
+@use "../settings/variables";
+a{
+  text-decoration: none;
+  font-size: variables.$font-small;
+  font-weight: 600;
+  color: variables.$text-light-color;
+  padding: 0.25rem 0;
+  &:hover{
+    color:variables.$primary-color-dark;
+  }
+  &.active{
+    color: variables.$primary-color;
+  }
+}

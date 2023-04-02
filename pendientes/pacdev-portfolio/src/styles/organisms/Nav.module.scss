@@ -1,0 +1,26 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: variables.$background-light-color;
+  box-shadow: variables.$shadow-inverted;
+  
+  @include mixins.mq(1024px) {
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    &__icon{
+      display: none;
+    }
+  }
+}

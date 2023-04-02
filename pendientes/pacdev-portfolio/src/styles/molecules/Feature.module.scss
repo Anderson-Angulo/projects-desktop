@@ -1,0 +1,43 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.m-feature{
+  text-align: center;
+  &__title{
+    margin-top: 1rem;
+    margin-bottom: .25rem;
+  }
+  &__description{
+    margin: 0;
+    @include mixins.mq(1024px){
+      font-size: variables.$font-normal;
+    }
+  }
+  &__icon-container{
+    width: max-content;
+    padding: .75em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: 0 auto;
+    &.green{
+      background: variables.$background-icon-green;
+      color: variables.$icon-color-green;
+    }
+    &.red{
+      background: variables.$background-icon-red;
+      color: variables.$icon-color-red;
+    }
+    &.blue{
+      background: variables.$background-icon-blue;
+      color: variables.$icon-color-blue;
+    }
+    @include mixins.mq(1024px){
+      &__icon{
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}

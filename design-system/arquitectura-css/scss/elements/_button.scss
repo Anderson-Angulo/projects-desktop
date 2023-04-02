@@ -1,0 +1,5 @@
+@use "../settings/variables";
+
+button{
+  font-family: variables.$body-font ;
+}

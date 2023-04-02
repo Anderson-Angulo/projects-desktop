@@ -1,0 +1,78 @@
+.home {
+  display: flex;
+  height: 100%;
+  gap: 1rem;
+}
+
+.home__title {
+  width: 90%;
+}
+
+.home__buttons {
+  gap: 1.25rem;
+}
+
+.btn__home {
+  font-size: .75rem;
+  padding: 0.335em 1.125em;
+  border-radius: 0.25rem;
+  gap: 0.5rem;
+  font-weight: 500;
+}
+.btn__home-info {
+  background: rgba(78, 78, 78, 0.8);
+  color: white;
+}
+
+.btn__info-icon,
+.btn__play-icon {
+  width: 1.125rem;
+}
+.btn__play-icon {
+  color: black;
+}
+
+.home__main{
+  background: #111;
+}
+
+@media screen and (min-width: 480px) {
+  .home {
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+  .home__title {
+    width: 80%;
+  }
+  .btn__info-icon,
+  .btn__play-icon {
+    width: 1.5rem;
+  }
+  .btn__home {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  .home__title{
+    width: 60%;
+  }
+  .home__buttons {
+    gap: 1.5rem;
+  }
+
+  .btn__info-icon,
+  .btn__play-icon {
+    width: 1.75rem;
+  }
+  .btn__home {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .home__title{
+    width: 55%;
+  }
+}

@@ -1,0 +1,30 @@
+.signup__header {
+  padding: 0.5rem 1.25rem 0.5rem 0;
+  position: fixed;
+  width: 95vw;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.signup__header img {
+  width: 8rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .signup__header img {
+    width: 10rem;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  .signup__header img {
+    width: 11rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .signup__header img {
+    width: 12rem;
+  }
+}

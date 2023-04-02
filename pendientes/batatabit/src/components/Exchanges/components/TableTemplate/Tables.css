@@ -1,0 +1,28 @@
+.table{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.table-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+    width: max-content;
+}
+.table-title{
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FF9536;
+  align-self: flex-start;
+  margin-left: .5rem;
+}
+.table-rows{
+    background-color: var(--just-white);
+    width: max-content;
+    border-radius: .5rem;
+}
+

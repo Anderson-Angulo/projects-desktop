@@ -1,0 +1,35 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+.a-btn{
+  gap: .625rem;
+  padding: 0.5em 1em;
+  font-size: $font-smaller;
+  font-weight: 600;
+  line-height: 180%;
+  background-color: transparent;
+  
+  &.btn-ghost{
+    box-shadow: $shadow-md;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  
+  }
+  &.btn-solid{
+    box-shadow: $shadow-md;
+    background-color: $primary-color;
+    color: $background-light-color;
+  }
+  &.btn-white{
+    box-shadow: $shadow-md;
+    background-color: $background-lighter-color;
+    color: $button-white-color;
+    border-color: $background-lighter-color;
+  }
+  @include mq(320px) {
+    font-size: $font-small;
+  }
+  @include mq(1024px) {
+    font-size: $font-normal;
+  }
+}
+

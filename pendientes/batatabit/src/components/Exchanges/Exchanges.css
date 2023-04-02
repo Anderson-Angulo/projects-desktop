@@ -1,0 +1,58 @@
+.exchanges{
+  text-align: center;
+  padding: 3.75rem 0;
+  background-color: var(--off-white);
+}
+
+.exchanges-image{
+  width: 195px;
+  padding-bottom: 2.5rem;
+}
+.exchanges-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 3rem;
+}
+.exchanges-title{
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 26px;
+  color: var(--black);
+}
+.exchanges-description{
+  font-family: 'DM Sans';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #757575;
+}
+
+.exchanges-tables{
+  position: relative;
+}
+
+.exchanges-tables button{
+  position: absolute;
+  top: 50%;
+  outline: none;
+  border:none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.prev{
+  left:2.5%;
+  transform: rotate(180deg);
+}
+.next{
+  right: 2.5%;
+}

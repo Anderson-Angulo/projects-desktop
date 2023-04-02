@@ -1,0 +1,15 @@
+.signup {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.signup__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  mix-blend-mode: soft-light;
+}

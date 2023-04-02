@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Manrope:wght@400;600&display=swap');
+
+$font-family-body:'Manrope', sans-serif;
+$font-family-headings:'Fira Sans', sans-serif; 
+
+
+$fs_base:16;
+
+$_fs-12:12 / $fs_base + rem;
+$_fs-14:14 / $fs_base + rem;
+$_fs-16:16 / $fs_base + rem;
+$_fs-18:18 / $fs_base + rem;
+$_fs-21:21 / $fs_base + rem;
+$_fs-28:28 / $fs_base + rem;
+$_fs-32:32 / $fs_base + rem;
+$_fs-40:40 / $fs_base + rem;
+$_fs-48:48 / $fs_base + rem;
+
+
+$font-title-lg:$_fs-48;
+$font-title-md: $_fs-40; 
+$font-title-sm: $_fs-32 ;
+$font-title-ss: $_fs-28 ;
+$font-title-xs: $_fs-21 ;
+
+$font-bigger: $_fs-18 ;
+$font-normal: $_fs-16 ;
+$font-small: $_fs-14 ;
+$font-smaller: $_fs-12;
+
+
+$font-sizings: (
+  bigger:$font-bigger,
+  normal:$font-normal,
+  small:$font-small
+);

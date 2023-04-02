@@ -1,0 +1,17 @@
+.slider__group {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: .25rem;
+  transform: translateX(calc(-100% * var(--index)));
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+
+.slider__group img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+}

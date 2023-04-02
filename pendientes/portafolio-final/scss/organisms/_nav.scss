@@ -1,0 +1,20 @@
+@import "../settings/variables";
+.g-nav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: $background-light-color;
+  box-shadow: $shadow-inverted;
+  @include mq(1024px) {
+    width: max-content;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,27 @@
+{% extends "../layout/template.html" %}
+
+{% block content %}
+  <h2>Filtrando cuyo id es menor igual que 15</h2>
+  {% for author in filtered2 %}
+    <li>{{author.id}} => {{author.email}}</li>
+
+  {% endfor %}
+  <h2>Orden Alfabético</h2>
+  <ul>
+    {% for author in alpha %}
+      <li>{{author.name}} ({{author.email}}) </li>
+    {% endfor %}
+  </ul>
+  <h2>Unico elemento filtrado por id</h2>
+  <p>{{author.name}} => {{author.email}}</p>
+  <h1>Todos los Autores</h1>
+  <ul>
+    {%  for author in authors %}
+      <li>{{ author.name }} ( {{author.email}} ) </li>
+    {% endfor %}
+  </ul>
+  <h3>Buscando author cuyo email sea erin47@example.com</h3>
+  {% for item in filtered %}
+    <li>{{item.name}} | {{item.email}}</li>
+  {% endfor %}
+{% endblock %}

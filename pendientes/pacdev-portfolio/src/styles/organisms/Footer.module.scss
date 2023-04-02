@@ -1,0 +1,121 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.g-footer{
+  position: relative;
+  padding-bottom: 3rem;
+  padding-top: 15.5rem;
+  margin-top: 300px;
+  border:1.5px solid variables.$border-color;
+  background: variables.$background-light-color;
+  box-shadow: variables.$shadow-inverted;
+  &__container{
+    height: 100%;
+  }
+  &__content,&__logo-nav,&__social-news,&__social{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem 0;
+  }
+
+  &__content{
+    align-items: flex-start;
+    gap: 3rem 0;
+  }
+
+  &__nav{
+    max-width: 230px;
+    a{
+      text-align: left;
+    }
+  }
+
+  &__social{
+    gap: .75rem 0;
+    p{
+      color: variables.$title-color;
+    }
+  }
+
+  &__icons{
+    display: flex;
+    gap:0 1rem;
+  }
+
+  &__banner{
+    width: calc(100% - 3rem);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem 0;
+    position: absolute;
+    top: -200px;
+    box-shadow: variables.$shadow-lg;
+  }
+  &__cta{
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  &__buttons{
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+  }
+  &.notbanner{
+    margin-top: 100px;
+    padding: 3rem 0;
+    .g-footer__banner{
+      display: none;
+    }
+    
+  }
+
+  @include mixins.mq(1024px){
+    padding-bottom: 5rem;
+    padding-top: 25.75rem;
+    margin-top: 248px;
+    &__content {
+        gap: 7rem 0;
+    }
+    &__banner{
+      width: calc(100% - 2rem);
+      padding: 8.125rem 0;
+      top: -148px;
+    }
+    &__cta{
+      font-size: variables.$font-title-md;
+    }
+    &__buttons{
+      flex-direction: row;
+      margin: 0 auto;
+      gap: 0 2rem;
+    }
+    &__logo-nav,
+    &__social-news{
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between;
+    }
+    &__nav{
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem 2.25rem;  
+      & > * {
+        width:42%; 
+      }
+    }
+
+    &.notbanner {
+      padding: 5rem 0;
+      .g-footer__banner {
+        display: none;
+      }
+    }
+  }
+
+}

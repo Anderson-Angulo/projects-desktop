@@ -1,0 +1,11 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+
+.o-container{
+  max-width: variables.$max-width;
+  width: calc(100% - 3rem);
+  margin:0 auto;
+  @include mixins.mq(1024px){
+    width: calc(100% - 2rem);
+  }
+}

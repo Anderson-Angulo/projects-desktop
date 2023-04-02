@@ -1,0 +1,14 @@
+.o-container{
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+}
+
+.o-container-cta{
+  display: flex;
+  place-items: center;
+}
+
+.o-container-search{
+  flex-basis: 720px;
+  padding: 0 2rem;
+}

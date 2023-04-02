@@ -1,0 +1,51 @@
+@use "../settings/variables";
+@use "../tools/mixins";
+.a-btn{
+  gap: .625rem;
+  padding: 0.5em 1em;
+  font-size: variables.$font-smaller;
+  font-weight: 600;
+  line-height: 180%;
+  background-color: transparent;
+  
+  &.btn-ghost{
+    box-shadow: variables.$shadow-md;
+    border: 1px solid variables.$primary-color;
+    color: variables.$primary-color;
+  
+  }
+  &.btn-solid{
+    box-shadow: variables.$shadow-md;
+    background-color: variables.$primary-color;
+    color: variables.$background-light-color;
+  }
+  &.btn-white{
+    box-shadow: variables.$shadow-md;
+    background-color: variables.$background-lighter-color;
+    color: variables.$button-white-color;
+    border-color: variables.$background-lighter-color;
+  }
+
+  @include mixins.mq(320px) {
+    font-size: variables.$font-small;
+  }
+  @include mixins.mq(1024px) {
+    font-size: variables.$font-normal;
+  }
+}
+
+
+.a-btn__slide {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: variables.$text-light-color;
+  background: variables.$background-light-color;
+  border-radius: 50%;
+  padding: .5em;
+  border: 1px solid variables.$border-color;
+  box-shadow: variables.$shadow-md;
+
+  &--right {
+    transform: rotate(180deg);
+  }
+}

@@ -1,0 +1,54 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box ;
+}
+
+html{
+  font-family: 'Karla', sans-serif;
+}
+
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul,li,ol{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+nav ul{
+  display: flex;
+  gap:1rem
+}
+nav a{
+  font-size: 1.25rem;
+  color:#333
+}
+
+.container > h2{
+  color:green;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+main {
+  min-height: calc(100vh - 8rem);
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}

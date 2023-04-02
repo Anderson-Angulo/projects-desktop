@@ -1,0 +1,18 @@
+@mixin sizings($sizings...){
+  @for $i from 1 through length($sizings){
+    .a-#{nth($sizings,$i)}{
+      font-size: map-get(variables.$font-sizings,nth($sizings, $i));
+      font-weight: 400;
+      color:variables.$text-color;
+      &.semibold{
+        font-weight: 600;
+      }
+      &.lighter{
+        color:variables.$text-lighter-color
+      }
+      &.light{
+        color:variables.$text-light-color
+      }
+    }
+  }
+}

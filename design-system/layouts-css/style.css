@@ -1,0 +1,53 @@
+body{
+  margin: 0;
+  color:white
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: calc(100% - 2rem);
+  margin:0 1rem;
+}
+
+header,aside,main,footer{
+  background: hsl(240, 19%, 5%);
+  padding: 2rem;
+}
+
+.grid{
+  display: grid;
+  gap:1rem;
+  min-height: 100vh;
+  grid-template-rows: min-content auto min-content
+}
+
+.main__content{
+  display: grid;
+  grid-template-rows: repeat(3,min-content);
+  gap:1rem
+}
+main{
+  grid-row: 1;
+}
+
+article{
+  background: hsl(240,14%,10%);
+  padding: 1rem;
+}
+
+
+
+@media screen and (min-width:1024px) {
+
+  .main__content{
+    grid-template-columns: min-content auto min-content;
+    grid-template-rows: auto;
+  } 
+  main{
+    grid-column:2;
+  }
+  .wrapper {
+    width:100%;
+    margin: 0 auto;
+  }
+}

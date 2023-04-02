@@ -1,0 +1,11 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.o-container{
+  max-width: $max-width;
+  width: calc(100% - 3rem);
+  margin:0 auto;
+  @include mq(1024px){
+    width: calc(100% - 2rem);
+  }
+}

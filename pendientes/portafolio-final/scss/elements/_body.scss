@@ -1,0 +1,17 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+body{
+  font-family: $font-family-body;
+  color: $text-color;
+  line-height: 180%;
+  font-size: $font-normal;
+  font-weight: 400;
+  background-color: $background-lighter-color;
+  margin-top: $header-height;
+  margin-bottom: $header-height;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  @include mq(1024px){
+    margin-bottom: 0;
+  }
+}

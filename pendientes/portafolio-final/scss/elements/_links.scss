@@ -1,0 +1,17 @@
+@import "../settings/variables";
+a{
+  text-decoration: none;
+  font-size: $font-small;
+  font-weight: 600;
+  color: $text-light-color;
+  padding: 0.25rem 0;
+  text-align: center;
+  @media (hover:hover){
+    &:hover{
+      color:$primary-color-dark;
+    }
+  }
+  &.active{
+    color: $primary-color;
+  }
+}

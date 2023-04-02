@@ -1,0 +1,54 @@
+.slider__content{
+  --index: 0;
+  display: grid;
+  width: 100%;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  overflow-x: hidden;
+  /* overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory; */
+  scroll-behavior: smooth;
+}
+
+
+/* .slider__content > *{
+  scroll-snap-align: start;
+} */
+/* 
+.slider__items::-webkit-scrollbar{
+  display: none;
+} */
+
+.slider__container{
+  position: relative;
+}
+
+.slider__button{
+  position: absolute;
+  color: white;
+  height: 100%;
+  padding:0 .5em;
+  background: rgba(0,0,0,.5);
+  font-size: 1.625rem;
+  display: flex;
+  place-items: center;
+  z-index:10
+}
+
+.slider__button-prev{
+  left: 0;
+  top: 0;
+}
+
+.slider__button-next{
+  right: 0;
+  top:0
+}
+
+.slider__header{
+  padding: 1.5rem 0;
+}
+
+.slider__header h2{
+  /* font-size: 1.25rem; */
+}

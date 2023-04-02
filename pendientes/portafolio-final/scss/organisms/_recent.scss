@@ -1,0 +1,98 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+
+.g-recent{
+  &__card{
+    flex-direction: column-reverse;
+    gap: .5rem 0;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  &__heading{
+    font-size: $font-title-xs;
+  }
+
+  &__points{
+    display: flex;
+    justify-content: center;
+    gap:0 1.5rem;
+    margin-top: 2.25rem;
+  }
+
+  &__point{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    background-color:#D9D9D9;
+    border: 1px solid #D9D9D9;
+    box-shadow: $shadow;
+    &.active{
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &__slide-button {
+    display: none;
+  }
+  
+
+
+  @include mq(480px) {
+    &__point{
+      width: .75rem;
+      height: .75rem;
+    }
+    &__heading {
+      font-size: $font-title-sm;
+    }
+
+    &__description {
+      font-size: $font-normal
+    }
+  }
+
+  @include mq(576px){
+  
+  }
+
+  @include mq(1024px){
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+
+    &__heading {
+        font-size: $font-title-md;
+    }
+
+    &__container{
+      position: relative;
+    }
+
+    &__slider {
+      margin: 0 2rem;
+    }
+
+    &__slide-button {
+      display: block;
+      position: absolute;
+      right: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      &:last-of-type{
+        left: 100%;
+        transform: rotate(-180deg) translateY(50%);
+      }
+    }
+
+    &__card {
+      flex-direction: row;
+      gap: 0 4rem;
+      max-width: max-content;
+    }
+
+    &__points{
+      display: none;
+    }
+  }
+}

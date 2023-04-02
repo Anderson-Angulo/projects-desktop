@@ -1,0 +1,14 @@
+@use "../settings/variables";
+.a-slide-button{
+  width: 2.5rem;
+  height: 2.5rem;
+  color:variables.$text-light-color;
+  background:variables.$background-light-color;
+  border-radius: 50%;
+  padding: .5em;
+  border: 1px solid variables.$border-color;
+  box-shadow: variables.$shadow-md;
+  &--right{
+    transform: rotate(180deg);
+  }
+}

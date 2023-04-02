@@ -1,0 +1,7 @@
+@use "../tools/mixins";
+section{
+  padding:64px 0;
+  @include mixins.mq(1024px){
+    padding: 100px 0;
+  }
+}

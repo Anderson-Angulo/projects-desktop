@@ -1,0 +1,13 @@
+import { Route, Routes } from "react-router"
+
+export interface Props{
+  children:JSX.Element[] | JSX.Element
+}
+function RoutesWithNotFound({children}:Props){
+  return <Routes>
+    {children}
+    <Route path="*" element={<>Not Found</>} />
+  </Routes>
+}
+
+export default RoutesWithNotFound
